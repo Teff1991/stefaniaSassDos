@@ -1,0 +1,85 @@
+.main{
+    grid-area: main;
+    background-color: map-get($colores,secundario);
+    color: map-get($colores,fuenteC);
+    padding: 20px;
+
+    .tarjeta{
+        display: flex;
+        @include displayflex (column,center,center,center,nowrap);
+        padding: 20px;
+    
+        .tarjeta__titulo{
+        font-size: 3rem;
+        padding: 10px;
+        animation-name: tarjeta__titulo;
+        animation-duration: 5s;
+        }
+        .tarjeta_descripcion{
+        font-size: 1.5rem;
+        padding: 5rem;
+        text-align: center;
+        }
+        .tarjeta__img{
+        width: 80%;
+        box-shadow: 0px 0px 8px 0px rgb(255 255 255 / 60%);
+        border-radius: 15px;
+        position: relative;
+        }
+        .tarjeta__btn{
+        background-color: rgba(255, 255, 255, 0.226);
+        position: relative;
+        bottom: 75px;
+        border: none;
+        border-radius: 18px;
+            a{
+            text-decoration: none;
+            color: map-get($colores,fuenteC);
+            font-size: 1.6em;
+            padding: 15px;
+            font-weight: 700;
+            }
+        }        
+    }
+}
+@keyframes tarjeta__titulo{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@media (max-width:576px){
+    .tarjeta__titulo{
+        font-size: 2.3rem;
+        text-align: center;
+        }
+    .tarjeta_descripcion{
+        font-size: 1.4rem;
+        padding: 1rem;
+        text-align: center;
+    }
+    .tarjeta__img {
+        width: 100%;
+        margin: 20px;
+        box-shadow: 0px 0px 8px 0px rgb(255 255 255 / 60%);
+        border-radius: 15px;
+        position: relative;
+    }
+    .tarjeta__btn{
+        background-color: rgba(255, 255, 255, 0.226);
+        position: relative;
+        bottom: 48px;
+        border: none;
+        border-radius: 18px;
+    }
+
+}
+
+
+
+
