@@ -1,0 +1,5 @@
+-Agregue titulo al index y a cada pages.
+-Agregue meta keywords con palabras claves relacionadas a mi pagina.
+-Agregue una meta description relacionada al contenido de la pagina.
+-Genere una URL de las respectivas paginas de mi proyecto.
+-Revise calidad de las fotos.
