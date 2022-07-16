@@ -7,7 +7,13 @@
     align-content: center;
     justify-content: center;
     align-items: flex-end;
+    width: 100%;
 }
 span{
     font-size: 1.5rem;
+}
+@media (max-width:576px){
+    .footer{
+        width: 100%;
+    }
 }

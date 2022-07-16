@@ -1,0 +1,50 @@
+.mainQuienes{
+    grid-area: main;
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: map-get($colores,secundario);
+    color: map-get($colores,fuenteC);
+    padding: 20px;
+    width: 100%;
+    height: 430px;
+    .tituloQ{
+        display:flex;
+        justify-content: center;
+        margin: 5px;
+        padding: 5px;
+    }
+    .parrafoQuienes{
+        font-size: 20px;
+        margin: 17px;
+        padding: 2px;
+        width: 600px;
+    }
+}
+@media (max-width:576px){
+    .mainQuienes{
+        grid-area: main;
+        display:flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        background-color: map-get($colores,secundario);
+        color: map-get($colores,fuenteC);
+        padding: 20px;
+        width: 100%;
+        height: 500px;
+        .tituloQ{
+            display:flex;
+            justify-content: center;
+            margin: 5px;
+            padding: 5px;
+        }
+        .parrafoQuienes{
+            font-size: 20px;
+            margin: 17px;
+            padding: 2px;
+            width: 400px;
+        }
+    }
+}

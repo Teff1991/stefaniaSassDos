@@ -1,0 +1,24 @@
+.mainPf{
+    grid-area: main;
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: map-get($colores,secundario);
+    color: map-get($colores,fuenteC);
+    padding: 20px;
+    width: 100%;
+    height: 430px;
+    .tituloPf{
+        display:flex;
+        justify-content: center;
+        margin: 5px;
+        padding: 5px;
+    }
+    .parrafoPf{
+        font-size: 20px;
+        margin: 17px;
+        padding: 2px;
+        width: 600px;
+    }
+}

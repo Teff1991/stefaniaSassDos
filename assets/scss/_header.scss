@@ -16,6 +16,7 @@
 .navbar{
     grid-area: nav;
     background-color: map-get($colores,primario);
+    width: 100%;
 
     ul{
         display: flex;
@@ -42,6 +43,7 @@
     .navbar{
         grid-area: nav;
         background-color: map-get($colores,primario);
+        width: 100%;
     }
     .navbar ul{
         display: flex;
