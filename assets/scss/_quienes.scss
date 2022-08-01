@@ -1,50 +1,67 @@
-.mainQuienes{
+.mainQuienes {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  background-color: map-get($colores, secundario);
+  color: map-get($colores, fuenteC);
+  width: 100%;
+  height: 50rem;
+  .tituloQ {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 5px;
+    padding: 5px;
+  }
+  .quienesSomosInfo {
+    display: flex;
+    @include displayflex(column, center, center, space-around, nowrap);
+    width: 100%;
+    height: 100%;
+    .parrafoQuienes {
+      font-size: 2rem;
+      margin: 15px;
+      padding: 2px;
+      width: 80%;
+    }
+    img {
+      width: 350px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .mainQuienes {
     grid-area: main;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
-    background-color: map-get($colores,secundario);
-    color: map-get($colores,fuenteC);
-    padding: 20px;
+    background-color: map-get($colores, secundario);
+    color: map-get($colores, fuenteC);
+
     width: 100%;
-    height: 430px;
-    .tituloQ{
-        display:flex;
-        justify-content: center;
-        margin: 5px;
-        padding: 5px;
+    height: 50rem;
+    .tituloQ {
+      text-align: center;
+      font-size: 2.5rem;
+      margin: 5px;
+      padding: 5px;
     }
-    .parrafoQuienes{
-        font-size: 20px;
-        margin: 17px;
+    .quienesSomosInfo {
+      display: flex;
+      @include displayflex(column, center, center, space-around, nowrap);
+      width: 100%;
+      height: 100%;
+      .parrafoQuienes {
+        font-size: 1.5rem;
+        margin: 15px;
         padding: 2px;
-        width: 600px;
+        width: 80%;
+      }
+      img {
+        width: 20rem;
+      }
     }
-}
-@media (max-width:576px){
-    .mainQuienes{
-        grid-area: main;
-        display:flex;
-        flex-direction: column;
-        align-content: center;
-        align-items: center;
-        background-color: map-get($colores,secundario);
-        color: map-get($colores,fuenteC);
-        padding: 20px;
-        width: 100%;
-        height: 500px;
-        .tituloQ{
-            display:flex;
-            justify-content: center;
-            margin: 5px;
-            padding: 5px;
-        }
-        .parrafoQuienes{
-            font-size: 20px;
-            margin: 17px;
-            padding: 2px;
-            width: 400px;
-        }
-    }
+  }
 }

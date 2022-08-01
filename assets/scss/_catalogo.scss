@@ -1,38 +1,39 @@
 .mainCatalogo {
-    grid-area: main;
-    background-color: map-get($colores,secundario);
-    color: map-get($colores,fuenteC);
-    padding: 20px;
+  grid-area: main;
+  background-color: map-get($colores, secundario);
+  color: map-get($colores, fuenteC);
+  padding: 20px;
 
-    .catalogo {
-        display: flex;
-        @include displayflex (row,center,center,space-around,wrap);
-    
-        .card {
-        display: flex;
+  .catalogo {
+    display: flex;
+    @include displayflex(row, center, center, space-around, wrap);
+
+    .card {
+      display: flex;
+      margin: 10px;
+      @include displayflex(column, center, center, space-between, nowrap);
+      border: 1px solid map-get($colores, primario);
+      width: 300px;
+      height: 450px;
+
+      .cardTitulo {
+        color: map-get($colores, fuenteC);
+        text-align: center;
+        font-size: 1.2rem;
+      }
+      .cardImg {
+        width: 250px;
+        max-height: 300px;
+        border-radius: 10px;
         margin: 10px;
-        flex-direction: column;
-        align-items: center;   
-        
-            .cardTitulo {
-            display:flex;
-            color: map-get($colores,fuenteC);
-            text-align: center;
-            }
-            .cardImg {
-            width: 350px;
-            height: 320px;
-            border-radius: 10px;
-            margin: 10px;
-            }
-            .cardBtn {
-            color: map-get($colores,fuenteC);
-            padding: 8px 10px;
-            margin: 10px 10px;
-            width: 75px;
-            height: 37px;
-            border-radius: 8px;
-            }
-        }
+      }
+      .cardBtn {
+        color: map-get($colores, fuenteC);
+        width: 75px;
+        height: 37px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
     }
+  }
 }
